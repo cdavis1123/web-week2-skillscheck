@@ -44,12 +44,12 @@ function lovesCodeChecker(x){
 //If the parameter is odd, return 'the number is odd'. If the number is even, return 'the number is even'.
 
 function oddChecker(num){
-	if (num % 1 === 0){
-		return "the number is odd"
-	}else if (num % 2 === 0){
+	if (num % 2 === 0){
 		return "the number is even"
+	}else{
+		return "the number is odd"
 	}
-}
+};
 //////////////////PROBLEM 7/////////////////
 
 // Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'.
