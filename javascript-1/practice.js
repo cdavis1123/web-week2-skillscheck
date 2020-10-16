@@ -106,7 +106,7 @@ let me = {
 //Return the answers array inside of the function.
 
 function bigOrSmall(arr){
-let answers = [100, 150, 200]
+let answers = []
 
 
 }
