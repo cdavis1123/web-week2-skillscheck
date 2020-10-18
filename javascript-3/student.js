@@ -4,8 +4,7 @@
 
 //////////////////STEP 1////////////////////
 //Create an array called 'groceries' that contains three grocery items as strings. 
-
-let groceries = ['milk', 'bread', 'eggs']
+let groceries = ['milk', 'bread', 'cheese']
 
 //////////////////STEP 2////////////////////
 //Create a variable called 'yourName' that is assigned the value of your name as a string. 
@@ -17,19 +16,22 @@ let yourName = 'Christy'
 // The function should return a string of 'XPARAM's Grocery List'.
 
 function setGroceryListTitle(x){
-    return "Grocery List"
+return `${x}'s Grocery List`
 }
+
 
 //////////////////STEP 4////////////////////
 //Create a function called 'addItem' that takes in one parameter called 'item'. 
 //Add the item parameter to the end of the groceries array created above. 
 //Inside of addItem, invoke displayData() which is a function you did not create (we did) that takes 
 //care of some of the work for getting your page to display correctly.
-function addItem(item){
-  groceries.push(item)
 
-  displayData()
+function addItem(item){
+groceries.push(item)
+displayData()
 }
+
+
 
 
 //////////////////STEP 5////////////////////
@@ -38,8 +40,7 @@ function addItem(item){
 //from the groceries array above by using splice. Then, invoke the displayData() function inside of your removeItem function.
 
 function removeItem(index){
-groceries.splice(index,1)
-
+groceries.splice(index, 1)
 displayData()
 }
 
@@ -52,15 +53,16 @@ displayData()
 //If the amount of groceries is between 1 and 5, return the string 'NUMBEROFGROCERIES items' 
 //with NUMBEROFGROCERIES replaced by the number of items in your groceries array.
 
-function checkGroceryCount(){
-  if( groceries.length >= 5){
-     return 'That looks like a big trip'
-   }else if( groceries.length === 1){
-       return '1 item'
-   }else{
-      return [groceries.length]('items')
-   }
+//function checkGroceryCount(){
+  function checkGroceryCount(){
+    if(groceries.length >= 5){
+      return 'That looks like a big trip'
+    } else if(groceries.length > 1 && groceries.length < 5){
+      return `${groceries.length} items`
     }
+    return `1 item`
+  }
+    
 
 //////////////////STEP 6////////////////////
 // Refresh the index.html page. You should now see the same thing you saw when you first loaded the page but you should
