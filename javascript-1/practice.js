@@ -198,14 +198,14 @@ const people = [
 ]
 
 let enemies = people.filter(function(element, index, array){
-	return element 
-});
+	return element.friend != true;
+})
 
 //////////////////PROBLEM 20////////////////////
 
 // Using the people array above, get a total of the awesomeLevel from all the people, and store that value in a variable 
 //named 'totallyAwesome'. Use .reduce().
 
-let totallyAwesome = people.reduce(function(curr, elem){
-	return curr + elem.awesomeLevel
-});
+let totallyAwesome = people.reduce(function(acc, curr, index, array){
+	return  acc + curr.awesomeLevel
+},0);
