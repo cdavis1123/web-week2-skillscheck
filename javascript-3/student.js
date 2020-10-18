@@ -17,7 +17,7 @@ let yourName = 'Christy'
 // The function should return a string of 'XPARAM's Grocery List'.
 
 function setGroceryListTitle(x){
-    return  "Grocery List"
+    return "Grocery List"
 }
 
 //////////////////STEP 4////////////////////
@@ -38,7 +38,7 @@ function addItem(item){
 //from the groceries array above by using splice. Then, invoke the displayData() function inside of your removeItem function.
 
 function removeItem(index){
-groceries.splice(index)
+groceries.splice(index,1)
 
 displayData()
 }
@@ -51,10 +51,11 @@ displayData()
 //If the number of groceries is equal to one, return the string '1 item'. 
 //If the amount of groceries is between 1 and 5, return the string 'NUMBEROFGROCERIES items' 
 //with NUMBEROFGROCERIES replaced by the number of items in your groceries array.
+
 function checkGroceryCount(){
   if( groceries.length >= 5){
      return 'That looks like a big trip'
-   }else if( groceries.length == 1){
+   }else if( groceries.length === 1){
        return '1 item'
    }else{
       return [groceries.length]('items')
