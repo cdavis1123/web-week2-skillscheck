@@ -107,8 +107,15 @@ let me = {
 
 function bigOrSmall(arr){
 let answers = []
+for(let i = 0; i < arr.length; i++){
+if (arr[i] > 100)
+arr[i] = 'big';
+else if ( arr[i] <= 100)
+arr[i] = 'small'
 
-
+answers.push(arr[i])
+}
+return answers
 }
 
 //////////////////PROBLEM 13////////////////////
@@ -120,8 +127,10 @@ let answers = []
 
 function arrayReverser (arr){
 	let reversed =[]
-	for (let i = arrayReverser.length -1; i >= 0; i--)
-	console.log(arr[i], i)
+	for (let i = arr.length -1; i >= 0; i--){
+		reversed.push(arr[i])
+	}
+	return reversed
 };
 
 //////////////////PROBLEM 14 - 18 Setup////////////////////
@@ -161,10 +170,11 @@ let total = myNumbers.reduce(function(acc, curr){
 //Then, use forEach to push each item's index from the myNumbers array into the newly created myNumbersIndex array. 
 
 let myNumbersIndex = []
-myNumbers.forEach(function(e,i,a){
-	
-});
+myNumbers.forEach(function(element, index, array) {
+myNumbersIndex.push(index)
 
+});
+console.log(myNumbersIndex);
 //////////////////PROBLEM 18////////////////////
 
 // Did you know that George Foreman has five sons named George? Go ahead and change everyone's name 
@@ -187,9 +197,8 @@ const people = [
 	{ name: 'Josh', friend: true, awesomeLevel: 7 }
 ]
 
-let enemies = people.filter(function(e, i, a){
-	if(e.friend = false)
-	return e
+let enemies = people.filter(function(element, index, array){
+	return element 
 });
 
 //////////////////PROBLEM 20////////////////////
