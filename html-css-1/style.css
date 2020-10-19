@@ -9,50 +9,113 @@ display: flex;
 flex-direction: row;
 align-items: center;
 width: 100%;
+height: 40px;
 background-color: darkgray;
+justify-content: space-between;
 }
 
 h2{
 color: white;
+font-size: 25px;
 }
-
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
 nav ul li{
+display:flex;
+justify-content: space-between;
 color: white;
-display: flexbox;
-flex-direction: row;
+font-size: 18px;
 
 }
 
 .top-container{
 display: flex;
+height: 500px;
 background-color: black;
 color:yellow;
+font-size: 60px;
+font-weight: bold;
 align-items: center;
+justify-content: center;
 }
 
 .three-boxes{
-display: flex;
-height: 200px;
+display: inline-flex;
+margin-top: 50px;
+margin-bottom: 50px;
+}
 
+#first {
+    background-color: aquamarine;
+    height:300px;
+    width: 300px;
+    border-radius: 10%;
+    margin-left: 75px;
+    margin-right: 100px;
+
+}
+
+#second {
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+    margin-right: 100px;
+
+}
+
+#third {
+    background-color: aquamarine;
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+    margin-right: 75px;
 }
 
 .two-boxes{
-display: flex;
+display: inline-flex;
 height: 200px;
 }
 
-.text-image{
-display: flex;
-height:200px;
+#rectangle-one{
+    background-color: orange;
+    height:200px;
+    width: 500px;
+    margin-left: 75px;
+    margin-right: 100px;
 }
-img{
 
+#rectangle-two{
+    background-color: orange;
+    height: 200px;
+    width: 500px;
+}
+
+img{
+    margin-right: 150px;
+    margin-top: 150px;
+    width: 400px;
+    height:200px;
+    }
+
+.image{
+display: flex;
+justify-content: flex-end;
+height: 200px;
 }
 
 p{
-
+font-size: 18px;
+margin-left: 75px;
+margin-bottom: 100px;
+width:500px;
+height: 200px;
 }
 
 .footer{
 background-color: darkgray;
+height:125px;
+
 }
